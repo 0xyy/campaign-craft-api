@@ -1,0 +1,29 @@
+{
+  "balance": {
+    "amount": 100000
+  },
+  "history": [
+    {
+      "amount": 200,
+      "title": "deposit",
+      "id": 1
+    },
+    {
+      "amount": -5000,
+      "title": "Winter Party",
+      "id": 2
+    }
+  ],
+  "campaigns": [
+    {
+      "title": "Winter Party",
+      "bidAmount": 1500,
+      "fund": 5000,
+      "status": "on",
+      "town": "Kraków",
+      "radius": 20,
+      "keywords": ["Winter", "Car", "Elegant Frozen Chair"],
+      "id": 1
+    }
+  ]
+}
