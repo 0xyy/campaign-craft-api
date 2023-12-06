@@ -8,10 +8,20 @@ const middlewares = jsonServer.defaults();
 
 server.use(
   cors({
-    origin: "*",
-    methods: ["POST", "GET", "PATCH", "PUT", "DELETE", "OPTIONS"],
+    origin: true,
+    credentials: true,
+    preflightContinue: false,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
 );
+server.options("*", cors());
+
+// server.use(
+//   cors({
+//     origin: "*",
+//     methods: ["POST", "GET", "PATCH", "PUT", "DELETE", "OPTIONS"],
+//   })
+// );
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 server.use(router);
