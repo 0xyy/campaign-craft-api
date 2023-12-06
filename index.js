@@ -10,6 +10,7 @@ server.use(
   cors({
     origin: [
       "https://sparkling-cascaron-d83dda.netlify.app",
+      "https://main--sparkling-cascaron-d83dda.netlify.app/",
       "http://localhost:4200",
     ],
   })
